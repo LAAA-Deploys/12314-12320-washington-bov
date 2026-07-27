@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="Broker Opinion of Value - 12314 &amp; 12320 Washington Place">
 <meta property="og:description" content="Two Adjacent Fourplexes - 8 Units - Culver City | LAAA Team - Marcus &amp; Millichap">
-<meta property="og:image" content="https://12314-12320-washington.laaa.com/images/b14_00.jpg">
+<meta property="og:image" content="https://12314-12320-washington.laaa.com/images/b20_18.jpg">
 <meta property="og:url" content="https://12314-12320-washington.laaa.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Broker Opinion of Value - 12314 &amp; 12320 Washington Place">
 <meta name="twitter:description" content="Two Adjacent Fourplexes - 8 Units - Culver City | LAAA Team - Marcus &amp; Millichap">
-<meta name="twitter:image" content="https://12314-12320-washington.laaa.com/images/b14_00.jpg">
+<meta name="twitter:image" content="https://12314-12320-washington.laaa.com/images/b20_18.jpg">
 <title>Broker Opinion of Value - 12314 &amp; 12320 Washington Place</title>
 <link rel="icon" type="image/png" href="images/LAAA_Team_Blue.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,6 +130,20 @@ td.num, th.num { text-align: right; }
 .photo-gallery .ph { height: 170px; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 .photo-gallery .ph img { width: 100%; height: 100%; object-fit: cover; }
 .gallery-label { font-size: 12px; font-weight: 700; color: #1B3A5C; text-transform: uppercase; letter-spacing: 1px; margin: 20px 0 8px; }
+.carousel { margin: 8px 0 24px; }
+.carousel-frame { position: relative; height: 520px; border-radius: 8px; overflow: hidden; background: #0F2745; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.carousel-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.35s ease; }
+.carousel-slide.active { opacity: 1; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; width: 44px; height: 44px; border: none; border-radius: 50%; background: rgba(15,39,69,0.65); color: #fff; font-size: 18px; cursor: pointer; transition: background 0.15s; }
+.carousel-btn:hover { background: rgba(197,162,88,0.9); }
+.carousel-btn.prev { left: 14px; }
+.carousel-btn.next { right: 14px; }
+.carousel-cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; background: linear-gradient(transparent, rgba(15,39,69,0.85)); color: #fff; font-size: 13px; letter-spacing: 0.3px; padding: 28px 18px 12px; }
+.carousel-dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+.carousel-dot { width: 10px; height: 10px; border-radius: 50%; border: none; background: #C9CFD8; cursor: pointer; padding: 0; }
+.carousel-dot.active { background: #C5A258; }
+@media (max-width: 760px) { .carousel-frame { height: 300px; } }
+@media print { .carousel-btn, .carousel-dots { display: none !important; } .carousel-frame { height: 4.6in; } }
 .os-two-col { display: grid; grid-template-columns: 55% 45%; gap: 24px; align-items: stretch; margin: 30px 0; }
 .os-right { font-size: 11px; line-height: 1.5; color: #555; background: #f8f9fb; border: 1px solid #e0e4ea; border-radius: 6px; padding: 18px 22px; }
 .os-right h3 { font-size: 15px; margin: 0 0 10px; }
@@ -215,7 +229,7 @@ td.num, th.num { text-align: right; }
 
 <!-- COVER -->
 <div class="cover">
-  <div class="cover-bg" style="background-image:url('images/b14_00.jpg');"></div>
+  <div class="cover-bg" style="background-image:url('images/b20_18.jpg');"></div>
   <div class="cover-content">
     <img src="images/LAAA_Team_White.png" class="cover-logo" alt="LAAA Team">
     <div class="cover-label">Confidential Broker Opinion of Value</div>
@@ -232,8 +246,10 @@ td.num, th.num { text-align: right; }
     <div class="cover-headshots">
       <div class="cover-headshot-wrap"><img class="cover-headshot" src="images/Glen_Scher.png" alt="Glen Scher"><div class="cover-headshot-name">Glen Scher</div><div class="cover-headshot-title">Senior Managing Director Investments</div></div>
       <div class="cover-headshot-wrap"><img class="cover-headshot" src="images/Filip_Niculete.png" alt="Filip Niculete"><div class="cover-headshot-name">Filip Niculete</div><div class="cover-headshot-title">Senior Managing Director Investments</div></div>
+      <div class="cover-headshot-wrap"><img class="cover-headshot" src="images/Vangelis_Korasidis.png" alt="Vangelis Korasidis"><div class="cover-headshot-name">Vangelis Korasidis</div><div class="cover-headshot-title">Global Luxury Estates Director &middot; Coldwell Banker</div></div>
     </div>
     <p class="client-greeting" id="client-greeting">Prepared Exclusively for the Owner of Record</p>
+    <p style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:10px;letter-spacing:0.5px;">The LAAA Team &middot; Marcus &amp; Millichap &nbsp;&amp;&nbsp; Vangelis Korasidis &middot; Coldwell Banker Global Luxury</p>
     <p style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:8px;">July 2026</p>
   </div>
 </div>
@@ -271,7 +287,7 @@ td.num, th.num { text-align: right; }
   <div class="tr-service-quote">
     <h3>"We Didn't Invent Great Service, We Just Work Relentlessly to Provide It."</h3>
     <p>Since 2013, the LAAA Team has closed 460+ multifamily transactions totaling $1.47B+ in volume across Los Angeles, Ventura, and Santa Barbara counties, with a particular depth in the southern San Fernando Valley submarkets of Toluca Lake, Studio City, Sherman Oaks, and North Hollywood.</p>
-    <p>Our practice is built on disciplined underwriting, the deepest comparable-sales dataset in the submarket, and a marketing engine that reaches every active multifamily buyer in Los Angeles. We advise owners on when and how to sell - not just whether - and we price to clear, not to languish.</p>
+    <p>Our practice is built on disciplined underwriting, the deepest comparable-sales dataset in the submarket, and a marketing engine that reaches every active multifamily buyer in Los Angeles. We advise owners on when and how to sell - not just whether - and we price to clear, not to languish. For this offering, the LAAA Team is joined by <strong>Vangelis Korasidis of Coldwell Banker Global Luxury</strong> - a Top 1% Agent Internationally based in Beverly Hills - combining institutional multifamily execution with a global luxury and investor buyer network.</p>
     <p>For 12314 &amp; 12320 Washington Place, that means an evidence-based opinion of value anchored in recent Culver City and Mar Vista multifamily sales, presented with the same rigor we would bring to defending the price against a buyer's due-diligence challenge.</p>
   </div>
 </div>
@@ -290,6 +306,9 @@ td.num, th.num { text-align: right; }
     <div class="bio-card"><img class="bio-headshot" src="images/Filip_Niculete.png" alt="Filip Niculete"><div>
       <div class="bio-name">Filip Niculete</div><div class="bio-title">Senior Managing Director Investments</div>
       <div class="bio-text">Co-founder of the LAAA Team and one of Southern California's top multifamily brokers. Since 2011, Filip has built a reputation for execution, integrity, and relentless work ethic, helping lead the team to $1.4B+ in closed transactions while consistently leading the market in active inventory.</div></div></div>
+    <div class="bio-card"><img class="bio-headshot" src="images/Vangelis_Korasidis.png" alt="Vangelis Korasidis"><div>
+      <div class="bio-name">Vangelis Korasidis</div><div class="bio-title">Global Luxury Estates Director &middot; Coldwell Banker Global Luxury</div>
+      <div class="bio-text">Beverly Hills&ndash;based Global Luxury Estates Director with Coldwell Banker Global Luxury and a member of the International Society of Excellence. A <strong>Top 1% Agent Internationally</strong>, <strong>Top 100 Agent in California</strong>, and <strong>Top 10 Agent in North America in Rental Income</strong>, Vangelis brings an international luxury and investor buyer network to the offering, complementing the LAAA Team's multifamily depth. <span style="color:#6B7280;">Office 310-247-1500 &middot; Cell 310-405-9500 &middot; Greek@ColdwellBanker.com &middot; DRE 01222626 &middot; VangelisKorasidis.com</span></div></div></div>
   </div>
   <div class="team-grid">
     <div class="team-card"><img class="team-headshot" src="images/Aida_Memary_Scher.png" alt="Aida Memary Scher"><div class="team-card-name">Aida Memary Scher</div><div class="team-card-title">Associate Director</div></div><div class="team-card"><img class="team-headshot" src="images/Luka_Leader.png" alt="Luka Leader"><div class="team-card-name">Luka Leader</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Morgan_Wetmore.png" alt="Morgan Wetmore"><div class="team-card-name">Morgan Wetmore</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Logan_Ward.png" alt="Logan Ward"><div class="team-card-name">Logan Ward</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Alexandro_Tapia.png" alt="Alexandro Tapia"><div class="team-card-name">Alexandro Tapia</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Blake_Lewitt.png" alt="Blake Lewitt"><div class="team-card-name">Blake Lewitt</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Mike_Palade.png" alt="Mike Palade"><div class="team-card-name">Mike Palade</div><div class="team-card-title">Agent Assistant</div></div><div class="team-card"><img class="team-headshot" src="images/Tony_Dang.png" alt="Tony H. Dang"><div class="team-card-name">Tony H. Dang</div><div class="team-card-title">Business Operations Manager</div></div><div class="team-card"><img class="team-headshot" src="images/Tirajeh_Vossoughi_Horton.jpg" alt="Tirajeh Vossoughi-Horton"><div class="team-card-name">Tirajeh Vossoughi-Horton</div><div class="team-card-title">Investment Brokerage Intern</div></div>
@@ -460,20 +479,54 @@ td.num, th.num { text-align: right; }
   </table></div>
 
   <h3 class="sub-heading">Property Photographs</h3>
-  <div class="gallery-label">12314 Washington Pl</div>
-  <div class="photo-gallery">
-    <div class="ph"><img src="images/b14_08.jpg" alt="12314 Washington Pl - front exterior"></div>
-    <div class="ph"><img src="images/b14_04.jpg" alt="12314 Washington Pl - renovated kitchen"></div>
-    <div class="ph"><img src="images/b14_13.jpg" alt="12314 Washington Pl - central walkway and unit entries"></div>
-    <div class="ph"><img src="images/b14_10.jpg" alt="12314 Washington Pl - gated parking court"></div>
+  <div class="gallery-label">Property Photographs</div>
+  <div class="carousel" id="prop-carousel">
+    <div class="carousel-frame">
+      <img class="carousel-slide active" src="images/b20_18.jpg" alt="Aerial - 12314 and 12320 Washington Pl, both parcels side by side" data-cap="Aerial &mdash; 12314 &amp; 12320 Washington Pl on side-by-side parcels">
+      <img class="carousel-slide" src="images/b20_01.jpg" alt="Both buildings from Washington Pl" data-cap="Both buildings from Washington Pl &mdash; new 2025 exterior paint">
+      <img class="carousel-slide" src="images/b14_00.jpg" alt="12314 Washington Pl - front elevation" data-cap="12314 Washington Pl &mdash; front elevation">
+      <img class="carousel-slide" src="images/b14_08.jpg" alt="12314 Washington Pl - corner exterior" data-cap="12314 Washington Pl &mdash; corner exterior">
+      <img class="carousel-slide" src="images/b14_13.jpg" alt="12314 Washington Pl - central walkway and unit entries" data-cap="12314 Washington Pl &mdash; central walkway &amp; unit entries">
+      <img class="carousel-slide" src="images/b14_04.jpg" alt="12314 Washington Pl - kitchen" data-cap="12314 Washington Pl &mdash; unit kitchen">
+      <img class="carousel-slide" src="images/b14_10.jpg" alt="12314 Washington Pl - gated parking court" data-cap="12314 Washington Pl &mdash; gated parking court">
+      <img class="carousel-slide" src="images/b20_04.jpg" alt="12320 Washington Pl - front exterior" data-cap="12320 Washington Pl &mdash; front exterior">
+      <img class="carousel-slide" src="images/b20_06.jpg" alt="12320 Washington Pl - unit entries and porches" data-cap="12320 Washington Pl &mdash; unit entries &amp; porches">
+      <img class="carousel-slide" src="images/b20_11.jpg" alt="12320 Washington Pl - garage bank" data-cap="12320 Washington Pl &mdash; garage bank ($1,400/mo parking income)">
+      <button class="carousel-btn prev" type="button" aria-label="Previous photo" onclick="carouselMove(-1)">&#10094;</button>
+      <button class="carousel-btn next" type="button" aria-label="Next photo" onclick="carouselMove(1)">&#10095;</button>
+      <div class="carousel-cap" id="carousel-cap">Aerial &mdash; 12314 &amp; 12320 Washington Pl on side-by-side parcels</div>
+    </div>
+    <div class="carousel-dots" id="carousel-dots"></div>
   </div>
-  <div class="gallery-label">12320 Washington Pl</div>
-  <div class="photo-gallery">
-    <div class="ph"><img src="images/b20_04.jpg" alt="12320 Washington Pl - front exterior"></div>
-    <div class="ph"><img src="images/b20_06.jpg" alt="12320 Washington Pl - unit entries and porches"></div>
-    <div class="ph"><img src="images/b20_11.jpg" alt="12320 Washington Pl - garage bank / parking income"></div>
-    <div class="ph"><img src="images/b20_18.jpg" alt="12314 &amp; 12320 Washington Pl - aerial of both parcels"></div>
-  </div>
+  <script>
+  (function () {
+    var slides = document.querySelectorAll('#prop-carousel .carousel-slide');
+    var dotsWrap = document.getElementById('carousel-dots');
+    var cap = document.getElementById('carousel-cap');
+    var idx = 0;
+    for (var i = 0; i < slides.length; i++) {
+      var d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', 'Photo ' + (i + 1));
+      d.setAttribute('data-i', i);
+      d.onclick = function () { show(parseInt(this.getAttribute('data-i'), 10)); };
+      dotsWrap.appendChild(d);
+    }
+    function show(n) {
+      slides[idx].classList.remove('active');
+      dotsWrap.children[idx].classList.remove('active');
+      idx = (n + slides.length) % slides.length;
+      slides[idx].classList.add('active');
+      dotsWrap.children[idx].classList.add('active');
+      cap.innerHTML = slides[idx].getAttribute('data-cap');
+    }
+    window.carouselMove = function (step) { show(idx + step); };
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { carouselMove(-1); }
+      if (e.key === 'ArrowRight') { carouselMove(1); }
+    });
+  })();
+  </script>
 </div>
 
 <!-- BUYER PROFILE -->
@@ -673,6 +726,11 @@ td.num, th.num { text-align: right; }
       <div class="metric-card"><span class="metric-value">$454</span><span class="metric-label">Price / SF</span></div>
       <div class="metric-card"><span class="metric-value">13.91x</span><span class="metric-label">GRM</span></div>
     </div>
+    <div style="max-width:720px;margin:20px auto 4px;background:#F2F4F7;border:1px solid #E2E5EB;border-left:4px solid #C5A258;border-radius:6px;padding:14px 20px;text-align:center;">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#C5A258;font-weight:700;margin-bottom:6px;">Expected Trade Range</div>
+      <div style="font-size:26px;font-weight:700;color:#1B3A5C;font-family:'DM Serif Display',serif;">$2,920,000 &ndash; $3,196,000</div>
+      <div style="font-size:13px;color:#6B7280;margin-top:4px;">5.50% cap at the floor &middot; 4.92% cap at list &nbsp;|&nbsp; $365,000 &ndash; $399,500 per unit &nbsp;|&nbsp; $415 &ndash; $454 per SF</div>
+    </div>
     <div class="split-panel">
       <div class="split-card">
         <div class="split-card-addr">12314 Washington Pl</div>
@@ -689,7 +747,8 @@ td.num, th.num { text-align: right; }
     <h3 class="sub-heading">Pricing Matrix</h3>
     <div class="table-scroll"><table>
       <thead><tr><th class="num">Purchase Price</th><th class="num">Cap Rate</th><th class="num">Cash-on-Cash</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">GRM</th><th class="num">DSCR</th></tr></thead>
-      <tbody><tr><td class="num">$2,946,000</td><td class="num">5.44%</td><td class="num">2.80%</td><td class="num">$368,250</td><td class="num">$419</td><td class="num">12.82x</td><td class="num">1.26x</td></tr>
+      <tbody><tr><td class="num">$2,920,000 <span style="font-size:10px;color:#C5A258;font-weight:700;">RANGE FLOOR</span></td><td class="num">5.50%</td><td class="num">2.95%</td><td class="num">$365,000</td><td class="num">$415</td><td class="num">12.71x</td><td class="num">1.27x</td></tr>
+<tr><td class="num">$2,946,000</td><td class="num">5.44%</td><td class="num">2.80%</td><td class="num">$368,250</td><td class="num">$419</td><td class="num">12.82x</td><td class="num">1.26x</td></tr>
 <tr><td class="num">$2,996,000</td><td class="num">5.33%</td><td class="num">2.53%</td><td class="num">$374,500</td><td class="num">$426</td><td class="num">13.04x</td><td class="num">1.23x</td></tr>
 <tr><td class="num">$3,046,000</td><td class="num">5.22%</td><td class="num">2.26%</td><td class="num">$380,750</td><td class="num">$433</td><td class="num">13.26x</td><td class="num">1.21x</td></tr>
 <tr><td class="num">$3,096,000</td><td class="num">5.11%</td><td class="num">2.09%</td><td class="num">$387,000</td><td class="num">$440</td><td class="num">13.47x</td><td class="num">1.20x</td></tr>
@@ -705,7 +764,7 @@ td.num, th.num { text-align: right; }
     <p style="font-size:12px;color:#666;margin-top:-12px;">Identical operating-expense structure at every row; real estate taxes scale at 1.25% of each row's price. Rows below $3,096,000 are LTV-constrained at 60%; DSCR floats above 1.20x.</p>
     <h3 class="sub-heading">Pricing Rationale</h3>
     <p>The list price of $3,196,000 reconciles three independent pricing lenses. On a per-unit basis ($399,500), the subject carries a deliberate premium to the sold-comp median of $277,542 - a median built on 6-9 unit older stock - because 4-unit product commands materially more per door on the Westside (240 3rd Ave closed at $552,518/unit), and the active Kinston Ave fourplex asks $398,750/unit, validating the subject's number almost exactly. On cap rate, the 4.92% going-in yield is underpinned by in-place rents roughly 48% below the seller's own $3,100 market estimate: the same expense structure at market rents produces a 7.48% pro forma cap, before any ADU contribution. On price-per-SF ($454), the subject prices directly against the anchor sale two blocks away - 12510 Washington Pl at $459/SF, closed March 2026 - while undercutting the 2-4 unit active set's $612/SF average by roughly 26%.</p>
-    <p>The price is anchored where the same-street closed evidence and the active fourplex market intersect - positioned to clear within an industry-standard marketing window rather than to sit, with the per-building split ($1,498,000 / $1,698,000) preserving flexibility for both residential-financed and commercial-pool buyers.</p>
+    <p>The price is anchored where the same-street closed evidence and the active fourplex market intersect - positioned to clear within an industry-standard marketing window rather than to sit, with the per-building split ($1,498,000 / $1,698,000) preserving flexibility for both residential-financed and commercial-pool buyers. We expect the offering to trade between <strong>$2,920,000 and $3,196,000</strong> - the floor of that range representing a 5.50% going-in cap rate on the same reassessed expense structure, a yield that would rank among the strongest of any recent Westside small-multifamily trade.</p>
     <div class="condition-note"><strong>Assumptions &amp; Conditions:</strong> This opinion of value is based on seller-signed rent rolls dated 7/25/26, seller-signed 2025 P&amp;Ls, and recent comparable sales. Financing shown is illustrative (6.00%, 30-year amortization, loan sized to the lesser of 60% LTV or a 1.20x DSCR). Real estate taxes are modeled at 1.25% of the purchase price (LA County reassessment at close). ADU plan count and status, current allowable rent increases under the Culver City Rent Control Ordinance, and utility metering are to be verified by buyer. Final terms, prorations, and net proceeds depend on the executed contract and close date. Buyer to verify all figures in due diligence.</div>
   </div>
 </div>
@@ -714,10 +773,11 @@ td.num, th.num { text-align: right; }
 <div class="footer" id="contact">
   <img src="images/LAAA_Team_White.png" class="footer-logo" alt="LAAA Team">
   <div class="footer-team">
-    <div class="footer-person"><img src="images/Glen_Scher.png" class="footer-headshot" alt="Glen Scher"><div class="footer-name">Glen Scher</div><div class="footer-title">Senior Managing Director Investments</div><div class="footer-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA License: 01962976</div></div>
-    <div class="footer-person"><img src="images/Filip_Niculete.png" class="footer-headshot" alt="Filip Niculete"><div class="footer-name">Filip Niculete</div><div class="footer-title">Senior Managing Director Investments</div><div class="footer-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA License: 01905352</div></div>
+    <div class="footer-person"><img src="images/Glen_Scher.png" class="footer-headshot" alt="Glen Scher"><div class="footer-name">Glen Scher</div><div class="footer-title">Senior Managing Director Investments</div><div class="footer-firm" style="font-size:12px;color:#C5A258;margin:2px 0 4px;">LAAA Team &middot; Marcus &amp; Millichap</div><div class="footer-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA License: 01962976</div></div>
+    <div class="footer-person"><img src="images/Filip_Niculete.png" class="footer-headshot" alt="Filip Niculete"><div class="footer-name">Filip Niculete</div><div class="footer-title">Senior Managing Director Investments</div><div class="footer-firm" style="font-size:12px;color:#C5A258;margin:2px 0 4px;">LAAA Team &middot; Marcus &amp; Millichap</div><div class="footer-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA License: 01905352</div></div>
+    <div class="footer-person"><img src="images/Vangelis_Korasidis.png" class="footer-headshot" alt="Vangelis Korasidis"><div class="footer-name">Vangelis Korasidis</div><div class="footer-title">Global Luxury Estates Director</div><div class="footer-firm" style="font-size:12px;color:#C5A258;margin:2px 0 4px;">Coldwell Banker Global Luxury</div><div class="footer-contact"><a href="tel:3104059500">(310) 405-9500</a> cell &middot; <a href="tel:3102471500">(310) 247-1500</a> office<br><a href="mailto:Greek@ColdwellBanker.com">Greek@ColdwellBanker.com</a><br>CA License: 01222626</div></div>
   </div>
-  <div class="footer-office">16830 Ventura Blvd, Ste. 100, Encino, CA 91436 | <a href="https://www.laaa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">www.laaa.com</a></div>
+  <div class="footer-office">Marcus &amp; Millichap &middot; 16830 Ventura Blvd, Ste. 100, Encino, CA 91436 &nbsp;|&nbsp; Coldwell Banker &middot; 301 N Canon Dr, Beverly Hills, CA 90210 &nbsp;|&nbsp; <a href="https://www.laaa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">www.laaa.com</a></div>
   <div class="footer-disclaimer">This information has been secured from sources we believe to be reliable, but we make no representations or warranties, expressed or implied, as to the accuracy of the information. Buyer must verify the information and bears all risk for any inaccuracies. Marcus &amp; Millichap Real Estate Investment Services, Inc. | License: CA 01930580.</div>
 </div>
 
